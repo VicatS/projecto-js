@@ -23,7 +23,7 @@ body{
 }
 
 #logo{
-    font-family: "Times New Roman", Times, serif;
+    font-family: Helvetica, Arial;
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 75px;
@@ -159,4 +159,17 @@ form input[type="submit"]{
     border: 1px solid #ccc;
     color: #333333;
     cursor: pointer;
+}
+
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgb(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
 }
