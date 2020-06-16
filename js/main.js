@@ -93,4 +93,12 @@ $(function () {
         theme.attr("href", "css/blue.css")
     })
 
+//    Scroll up of the web
+    $('.rise').on("click", function (e) {
+        e.preventDefault()
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    })
+
 })

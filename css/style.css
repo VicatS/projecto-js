@@ -197,3 +197,10 @@ footer{
 #to-blue{
     background: #1F87C4;
 }
+
+.rise{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
