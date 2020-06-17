@@ -128,8 +128,16 @@ $(function () {
         })
     }
 
-    // show in about.html
+    // show in about.html ACCORDION
     if (window.location.href.indexOf('about') > -1) {
         $("#accordion").accordion()
+    }
+
+//    CLOCK
+    if (window.location.href.indexOf('clock') > -1) {
+        setInterval(function () {
+            let clock = moment().format("hh:mm:ss")
+            $('#clock').html(clock)
+        }, 1000)
     }
 })

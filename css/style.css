@@ -215,3 +215,14 @@ footer{
 #accordion{
     margin-top: 20px;
 }
+
+#clock{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: #333333;
+    border: 5px dashed #333333;
+    width: 30%;
+    padding: 30px;
+    margin: 0px auto;
+}
