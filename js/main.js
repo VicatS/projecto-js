@@ -101,4 +101,28 @@ $(function () {
         }, 500)
     })
 
+// Login false
+
+    $("#login form").on("submit", function () {
+        let form_name = $("#form_name").val()
+
+        localStorage.setItem("form_name", form_name)
+    })
+
+    let form_name = localStorage.getItem("form_name")
+    if (form_name != null && form_name != "undefined") {
+        let about_paragraph = $("#about p")
+
+        $("#about p").html("<br><strong>Welcome, " + form_name + "</strong>")
+
+        about_paragraph.append("<a href='#' id='logout'> SIGN OFF</a>")
+
+        $("#login").hide()
+
+        $("#logout").on("click", function () {
+            localStorage.clear()
+            location.reload()
+        })
+    }
+
 })
