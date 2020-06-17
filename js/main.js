@@ -140,4 +140,14 @@ $(function () {
             $('#clock').html(clock)
         }, 1000)
     }
+
+//    Validation
+    if (window.location.href.indexOf('contact') > -1) {
+        $("form input[name='birth_date']").datepicker({
+            dateFormat: 'dd-mm-yy'
+        })
+        $.validate({
+            lang: 'es'
+        })
+    }
 })
